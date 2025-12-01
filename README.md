@@ -20,7 +20,6 @@ It provides an API for securely storing and verifying full credit card numbers, 
 #  Setup Instructions
 
 ## 1. Clone the repository
-```bash
 git clone https://github.com/your-user/card-api.git
 cd card-api
 
