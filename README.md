@@ -21,10 +21,12 @@ It provides an API for securely storing and verifying full card numbers, includi
 ## 1. Clone the repository
 git clone https://github.com/lucas-tadeu-dev/card-api.git
 cd card-api
+<br><br>
 
 ## 2. Create database
 Create the MySQL database
 CREATE DATABASE card_api;
+<br><br>
 
 ## 3. Configure the application
 
@@ -50,6 +52,7 @@ mvn spring-boot:run
 API will start at:
 
 http://localhost:8080
+<br><br>
 
 ## 4. Authentication
 
@@ -69,6 +72,7 @@ Response:
 {
   "token": "eyJhbGciOiJIUzI1NiIs..."
 }
+<br><br>
 
 ## 5. Use the token in every protected request:
 
@@ -88,6 +92,7 @@ Response
   "id": 1,
   "maskedCard": "************1111"
 }
+<br><br>
 
 ## 6. Import Cards from TXT
 POST /api/cards/upload
@@ -108,20 +113,22 @@ Response
 {
   "imported": 2
 }
+<br><br>
 
 ## 7.Check if a Card Exists
 GET /api/cards/check?cardNumber=4111111111111111
+<br>
 Response if card exists
 {
   "exists": true,
   "cardId": 1
 }
-
+<br>
 If card does NOT exist
 {
   "exists": false
 }
-
+<br>
 Security & Data Protection
 
 Full credit card numbers are never stored in plain text.
@@ -146,7 +153,7 @@ Authenticated user (if applicable)
 
 Running Unit Tests
 mvn test
-
+<br><br>
 
 ## 8. Tests cover:
 
@@ -165,6 +172,7 @@ Controllers
 Logging filter
 
 Application startup
+<br><br>
 
 ## 9. Project Structure
 src/main/java/com/hyperativa/cardapi/
