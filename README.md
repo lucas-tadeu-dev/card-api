@@ -70,6 +70,7 @@ All protected endpoints require JWT authentication.
   "password": "admin123"
 }
 
+Response:
 {
   "token": "eyJhbGciOiJIUzI1NiIs..."
 }
