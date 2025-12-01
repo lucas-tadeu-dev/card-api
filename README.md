@@ -1,7 +1,6 @@
 # Card API – Hyperativa Challenge
 
-This project was developed as part of the Hyperativa backend challenge.  
-It provides an API for securely storing and verifying full credit card numbers, including JWT authentication, TXT import, logging, and MySQL persistence.
+It provides an API for securely storing and verifying full card numbers, including JWT authentication, TXT import, logging, and MySQL persistence.
 
 ---
 
