@@ -20,7 +20,7 @@ It provides an API for securely storing and verifying full credit card numbers, 
 #  Setup Instructions
 
 ## 1. Clone the repository
-git clone https://github.com/your-user/card-api.git
+git clone https://github.com/lucas-tadeu-dev/card-api.git
 cd card-api
 
 ## 2. Create database
@@ -60,19 +60,20 @@ http://localhost:8080
 
 All protected endpoints require JWT authentication.
 
-Login Endpoint
-POST /api/auth/login
-Request
+### 🔑 Login Endpoint
+**POST /api/auth/login**
+
+### Request
+```json
 {
   "username": "admin",
   "password": "admin123"
 }
 
-Response
 {
   "token": "eyJhbGciOiJIUzI1NiIs..."
 }
-
+```
 
 ## 5. Use the token in every protected request:
 
