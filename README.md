@@ -17,17 +17,18 @@ It provides an API for securely storing and verifying full credit card numbers, 
 
 ---
 
-# 1. Setup Instructions
+#  Setup Instructions
 
-## 1.1. Clone the repository
+## 1. Clone the repository
 ```bash
 git clone https://github.com/your-user/card-api.git
 cd card-api
 
+## 2. Create database
 Create the MySQL database
 CREATE DATABASE card_api;
 
-Configure the application
+## 3. Configure the application
 
 Edit src/main/resources/application-dev.properties:
 
@@ -56,7 +57,7 @@ API will start at:
 
 http://localhost:8080
 
-Authentication
+## 4. Authentication
 
 All protected endpoints require JWT authentication.
 
@@ -74,7 +75,7 @@ Response
 }
 
 
-Use the token in every protected request:
+## 5. Use the token in every protected request:
 
 Authorization: Bearer <TOKEN>
 
@@ -92,7 +93,7 @@ Response
   "maskedCard": "************1111"
 }
 
-Import Cards from TXT
+## 6. Import Cards from TXT
 POST /api/cards/upload
 
 Upload a TXT file with one card number per line.
@@ -112,7 +113,7 @@ Response
   "imported": 2
 }
 
-Check if a Card Exists
+## 7.Check if a Card Exists
 GET /api/cards/check?cardNumber=4111111111111111
 Response if card exists
 {
@@ -151,7 +152,7 @@ Running Unit Tests
 mvn test
 
 
-Tests cover:
+## 8. Tests cover:
 
 JWT provider
 
@@ -169,7 +170,7 @@ Logging filter
 
 Application startup
 
-Project Structure
+## 9. Project Structure
 src/main/java/com/hyperativa/cardapi/
 │
 ├── auth/
