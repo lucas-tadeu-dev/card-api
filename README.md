@@ -117,21 +117,21 @@ Response
 
 ## 7.Check if a Card Exists
 GET /api/cards/check?cardNumber=4111111111111111
-<br>
+<br><br>
 Response if card exists
 {
   "exists": true,
   "cardId": 1
 }
-<br>
+<br><br>
 If card does NOT exist
 {
   "exists": false
 }
-<br>
+<br><br>
 Security & Data Protection
 
-Full credit card numbers are never stored in plain text.
+Full card numbers are never stored in plain text.
 
 A secure SHA-256 hash is stored instead.
 
