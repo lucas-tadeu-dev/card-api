@@ -29,17 +29,13 @@ CREATE DATABASE card_api;
 
 ## 3. Configure the application
 
-Edit src/main/resources/application-dev.properties:
+edit if necessary: src/main/resources/application.yml:
 
 spring.datasource.url=jdbc:mysql://localhost:3306/card_api?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC
 spring.datasource.username=root
 spring.datasource.password=YOUR_PASSWORD
 
-spring.jpa.hibernate.ddl-auto=update
-
-jwt.secret=YOUR_64_BYTE_SECRET
-jwt.expiration-in-ms=3600000
-
+It's not good practice to leave the application, or any other configuration file, in the repository. I did this because it's a test to simplify things. Ideally, any configuration file should be placed in `gitignore` and never tracked by GitHub.
 
 Generate a 64-byte key here:
 https://www.allkeysgenerator.com/Random/Security-Encryption-Key-Generator.aspx
