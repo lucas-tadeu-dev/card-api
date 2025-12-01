@@ -69,12 +69,11 @@ All protected endpoints require JWT authentication.
   "username": "admin",
   "password": "admin123"
 }
-
+```
 Response:
 {
   "token": "eyJhbGciOiJIUzI1NiIs..."
 }
-```
 
 ## 5. Use the token in every protected request:
 
@@ -83,11 +82,12 @@ Authorization: Bearer <TOKEN>
 Card Endpoints
 3.1. Insert a Single Card
 POST /api/cards
-Request
+### Request
+```json
 {
   "cardNumber": "4111111111111111"
 }
-
+```
 Response
 {
   "id": 1,
